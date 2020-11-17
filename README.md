@@ -1,4 +1,4 @@
-# NODEAPP
+# INAPP
 
 <h1>ScreenShots<h1>
 <img src="https://raw.githubusercontent.com/aniketdgp/inapp/main/ss/home.png"  height="350" width="200"/>
