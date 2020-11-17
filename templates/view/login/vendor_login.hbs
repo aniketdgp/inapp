@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+          {{title}}
+        </title>
+            <link rel="icon" href="/img/img.png">
+            <link rel="stylesheet" href="./css/register_style_common.css"> 
+             <meta charset="utf-8">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+            
+    </head>
+
+    <body>
+       
+
+         <div class="home">
+
+
+             <div class="home_image">
+
+             </div>
+
+
+         </div>
+
+
+          <p class="slogan">VENDOR LOGIN</p>
+            
+
+            <div class="menu">
+
+
+
+<form class="register_form">
+ 
+  <label for="lphone">Phone</label>
+  <input type="text" id="phone" name="phone">
+  
+  <label for="lpassword">Password</label>
+  <input type="password" id="password" name="password">
+
+ <button class="button b1" value="submit" type="submit">Login</button>
+
+</form>
+
+            </div>
+        
+
+<script>
+
+const LoginForm = document.querySelector('form')
+const phone = document.getElementById('phone')
+const password = document.getElementById('password')
+
+
+
+LoginForm.addEventListener('submit',(e)=>{
+    e.preventDefault()
+    const Phone = phone.value
+    const Password = password.value
+    const url = "/vendor/login?phone="+Phone+"&password="+Password
+    window.open(url)
+
+})
+
+
+
+</script>
+
+
+        
+    </body>
+</html>
